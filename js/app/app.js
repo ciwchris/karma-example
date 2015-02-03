@@ -7,11 +7,13 @@
         config.$inject = ['$routeProvider'];
         function config($routeProvider) {
             $routeProvider
-                .when('/pageOne', {templateUrl: 'js/app/pageOne/page-one.html', controller: 'PageOneCtrl', controllerAs: 'vm'})
-                .otherwise('/pageOne');
+                .when('/addition', {templateUrl: 'js/app/addition/addition.html', controller: 'AdditionCtrl', controllerAs: 'vm'})
+                .when('/all', {templateUrl: 'js/app/all/all.html', controller: 'AddCtrl', controllerAs: 'vm'})
+                .otherwise('/addition');
         }
 
-        // Route: addition, subtraction, all (spies)
+        // Spies (both change location and service properties), injecting other service
+        // Testing internal functions
         // Controller does everything
         // Service does everything
 })();

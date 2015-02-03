@@ -2,11 +2,11 @@
     'use strict';
 
     angular.module('karma.example')
-        .controller('PageOneCtrl', PageOneCtrl);
+        .controller('AllCtrl', AllCtrl);
 
-    PageOneCtrl.$inject = [];
+    AllCtrl.$inject = [];
 
-    function PageOneCtrl() {
+    function AllCtrl() {
         var vm = this;
 
         vm.valueOne = 0;
